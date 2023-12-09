@@ -1,10 +1,6 @@
-function getSumOfDigits(num) {
-  const numStr = num.toString();
-  let count = 0;
-  for (let i = 0; i < numStr.length; i += 1) {
-    count = count + Number(numStr[i]);
-  }
-  console.log(count);
+function numberToStringInBase(number, base) {
+  console.log(parseInt(number, base));
 }
 
-getSumOfDigits(123);
+numberToStringInBase(255, 16) // 'ff'
+numberToStringInBase(2, 2) // '10'
